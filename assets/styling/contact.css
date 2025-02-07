@@ -1,0 +1,94 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.contact-main{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.contact-left{
+    width: 50%;
+    background-color: #2f33b3;
+    position: relative;
+}
+.contact-right{
+    width: 50%;
+}
+.contact-right img{
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.contact-content{
+    display: block;
+    color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-block: 4vw;
+    padding-inline: 5vw;
+}
+.contact-content h1{
+    color: aliceblue;
+    font-size: 6.5vw;
+    margin-bottom: 2.8vw;
+    font-weight: 700;
+}
+.contact-content p{
+    color: aliceblue;
+    font-size: 1.8vw;
+}
+.animated-link {
+    display: inline-flex;
+    align-items: center;
+    color:  #2f33b3;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+.animated-link:hover{
+    color:  #1d21a0;
+}
+
+.animated-link i {
+    margin-left: 5px; /* Space between text and icon */
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated-link:hover i {
+    transform: translateX(5px); /* Move arrow to right */
+}
+.card-1 h2{
+    font-size: 2.8vw;
+    font-weight: bold;
+}
+.card-2 h2{
+    font-size: 2.8vw;
+    font-weight: bold;
+}
+.card-3 h2{
+    font-size: 2.8vw;
+    font-weight: bold;
+}
+/* FORM */
+.contactf-left{
+    width: 50%;
+}
+.contactf-left img{
+    width: 100%;
+    height: 70vw;
+    object-fit: cover;
+}
+.contactf-right{
+    width: 50%;
+    height: 70vw;
+    background-color: #2f33b3;
+}

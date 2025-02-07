@@ -16,6 +16,9 @@ html, body{
 }
 
 /* Navbar */
+nav{
+    z-index: 999;
+}
 .navbar {
     position: absolute;
     top: 0;
@@ -80,14 +83,14 @@ html, body{
     margin-top: 2.2vw;
 }
 
-.hero-left div button{
+.explore-btn{
     padding: 1.5vw 5vw;
     border: none;
     background-color: rgb(37, 216, 61);
     border-radius: 2px;
     margin-top: 2.2vw;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
 }
-
 .hero-right {
     width: 50%;
 }
@@ -116,4 +119,91 @@ html, body{
     color: rgb(2, 2, 2);
     font-size: 5vw;
     font-weight: 800;
+}
+/* CARDS  */
+.card-1{
+    height: 400px;
+    background-color: #fafafa;
+    border: 0.02px solid rgb(224, 222, 222);
+}
+.card-2{
+    height: 400px;
+    background-color: #fafafa;
+    border: 0.02px solid rgb(224, 222, 222);
+}
+.card-3{
+    height: 400px;
+    background-color: #fafafa;
+    border: 0.02px solid rgb(224, 222, 222);
+}
+.card-1 img{
+    mix-blend-mode: multiply;
+    width: 100px;
+}
+.card-2 img{
+    mix-blend-mode: multiply;
+    width: 100px;
+}
+.card-3 img{
+    mix-blend-mode: multiply;
+    width: 100px;
+}
+.cards-p{
+    color: rgb(90, 90, 90);
+}
+.learn-more {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #3539b5;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.learn-more i {
+    margin-left: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.learn-more:hover {
+    color: #2f33b3;
+}
+
+.learn-more:hover i {
+    transform: translateX(5px);
+}
+/* WHY_SECTION */
+.Why-left{
+    width: 50%;
+    height: 60vw;
+}
+.Why-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+.Why-right{
+    width: 50%;
+    height: 60vw;
+    background-color: #2f33b3;
+    padding-block: 10vw;
+    padding-inline: 5vw;
+}
+#Why-main{
+    display: flex;
+}
+.why-content{
+    display: block;
+}
+.why-content h2{
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: #fafafa;
+}
+.why-content p{
+    font-size: 1.6vw;
+    color: #fafafa;
+    margin-top: 2.5vw;
 }
