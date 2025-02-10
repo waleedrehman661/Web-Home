@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/styling/style.css">
     <link rel="stylesheet" href="assets/styling/contact.css">
+    <link rel="stylesheet" href="assets/styling/Media.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -24,92 +25,59 @@
             <img src="assets/images/contact-banner.jpg" alt="">
         </div>
        </div>
-       <section>
-        <div style="margin-top: 40vw;" class="sericesdiv text-dark py-4">
-            <div class="col-8">
-             <h5 class="text-center">Say Hello</h5>
-             <h2 class="text-center">Contact us for sales, media or support.</h2>
-            </div>
+       <section id="con-sec-md" style="margin-top: 42%; position: relative;">
+        <div class="sericesdiv text-dark py-4">
+          <div class="col-8">
+           <h5 class="text-center">Happy Customers</h5>
+           <h2 class="text-center">We believe in the client's happiness.</h2>
+          </div>
        </section>
-       <div class="container gap-3 overflow-hidden d-flex py-5">
-        <div class="col-12 col-md-4">
-          <div class="card-1 text-center p-4 py-5">
-           <img class="mb-5" src="assets/images/mobile.png" alt="">
-           <div>
-            <h2>Sales & Enquiries</h2>
-           <p class="cards-p mt-4 mb-4">Please send your enquiry for information about a product.</p>
-           <a href="mailto:help@yourdomain.com" class="animated-link">
-            help@yourdomain.com <i class="fas fa-arrow-right"></i>
-        </a>                  
-           </div>
+       <section>
+        <div class="contact-form-main d-flex w-100 mb-5">
+          <div class="contactf-left">
+            <img src="assets/images/contact-img.jpg" alt="">
           </div>
-        </div>
-        <div class="col-12 col-md-4">
-         <div class="card-2 text-center p-4 py-5">
-          <img class="mb-5" src="assets/images/lamp.png" alt="">
-           <div>
-            <h2>Press & Media</h2>
-           <p class="cards-p mt-4 mb-4">Please send your request for information about a media enquiry.</p>
-           <a href="mailto:help@yourdomain.com" class="animated-link">
-            help@yourdomain.com <i class="fas fa-arrow-right"></i>
-        </a>                   
-           </div>
-         </div>
-        </div>
-        <div class="col-12 col-md-4">
-         <div class="card-3 text-center p-4 py-5">
-          <img class="mb-5" src="assets/images/mouse.png" alt="">
-          <div>
-           <h2>Help & Support</h2>
-          <p class="cards-p mt-4 mb-4">Please send your request for help from our happiness engineer.</p>
-          <a href="mailto:help@yourdomain.com" class="animated-link">
-            help@yourdomain.com <i class="fas fa-arrow-right"></i>
-        </a>                 
-          </div>
-         </div>
-        </div>
-      </div>
-      <section>
-        <section>
-          <div class="contact-form-main d-flex w-100 mb-5">
-            <div class="contactf-left">
-              <img src="assets/images/contact-img.jpg" alt="">
-            </div>
-            <div class="contactf-right">
-              <div class="con-form text-left px-5">
-                <div class="con-content">
-                  <h2>Get in Touch</h2>
-                  <p>We're always on the lookout to work with new clients. If you want to work with us, please write to us using the form below.</p>
+          <div class="contactf-right">
+            <div class="con-form text-left px-5">
+              <div class="con-content">
+                <h2>Get in Touch</h2>
+                <p>We're always on the lookout to work with new clients. If you want to work with us, please write to us using the form below.</p>
+              </div>
+              <div class="contact-form mt-4">
+                <div class="form-group">
+                  <label for="fullName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="fullName" placeholder="Enter your full name" required>
+                  <span style="color: rgb(236, 31, 31); font-size: 12px;" id="fullNameError" class="error-message"></span>
                 </div>
-                <div class="contact-form">
-                  <div class="form-group">
-                    <label for="fullName">Full Name <span class="required">*</span></label>
-                    <input type="text" id="fullName" placeholder="Enter your full name" required>
-                  </div>
-                  <div class="form-group input-with-icon">
-                    <label for="email">Email <span class="required">*</span></label>
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                  </div>
-                  <div class="form-group input-with-icon">
-                    <label for="phoneNumber">Phone Number</label>
-                    <i class="fas fa-phone"></i>
-                    <input type="text" id="phoneNumber" placeholder="Enter your phone number">
-                  </div>
-                  <div class="form-group">
-                    <label for="subject">Subject <span class="required">*</span></label>
-                    <input type="text" id="subject" placeholder="Enter subject" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message <span class="required">*</span></label>
-                    <textarea id="message" placeholder="Enter your message" required></textarea>
-                  </div>
-                  <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                <div class="form-group input-with-icon">
+                  <label for="email">Email <span class="required">*</span></label>
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="email" placeholder="Enter your email" required>
+                  <span style="color: rgb(236, 60, 60); font-size: 12px;"  id="emailError" class="error-message"></span>
                 </div>
+                <div class="form-group input-with-icon">
+                  <label for="phoneNumber">Phone Number</label>
+                  <i class="fas fa-phone"></i>
+                  <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+                  <span style="color: rgb(236, 40, 40); font-size: 12px;"  id="phoneNumberError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject <span class="required">*</span></label>
+                  <input type="text" id="subject" placeholder="Enter subject" required>
+                  <span style="color: rgb(236, 31, 31); font-size: 12px;"  id="subjectError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message <span class="required">*</span></label>
+                  <textarea id="message" placeholder="Enter your message" required></textarea>
+                  <span style="color: rgb(236, 40, 40); font-size: 12px;"  id="messageError" class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
               </div>
             </div>
           </div>
-        </section>        
+        </div>
+      </section>
+              
       </section>
 <footer></footer>
     </div>

@@ -29,7 +29,7 @@ nav{
 }
 
 .navlogo{
-    width: 15vw;
+    width: 150px;
 }
 
 .navbar-nav{
@@ -39,6 +39,12 @@ nav{
 .nav-link{
     font-size: 16.2px;
     font-weight: 500;
+}
+
+.navbar-toggler-icon {
+    background-image: none; /* Remove default icon */
+    background-color: rgb(219, 126, 126); 
+    border-radius: 5px;
 }
 
 /* Landing Section */
@@ -121,20 +127,9 @@ nav{
     font-weight: 800;
 }
 /* CARDS  */
-.card-1{
-    height: 400px;
-    background-color: #fafafa;
-    border: 0.02px solid rgb(224, 222, 222);
-}
-.card-2{
-    height: 400px;
-    background-color: #fafafa;
-    border: 0.02px solid rgb(224, 222, 222);
-}
-.card-3{
-    height: 400px;
-    background-color: #fafafa;
-    border: 0.02px solid rgb(224, 222, 222);
+.card-1, .card-2, .card-3 {
+    background: #fff;
+    border: 0.08px solid rgb(233, 233, 233);
 }
 .card-1 img{
     mix-blend-mode: multiply;
@@ -188,7 +183,7 @@ nav{
     width: 50%;
     height: 60vw;
     background-color: #2f33b3;
-    padding-block: 10vw;
+    padding-block: 7vw;
     padding-inline: 5vw;
 }
 #Why-main{
@@ -201,6 +196,9 @@ nav{
     font-size: 4.5vw;
     font-weight: 700;
     color: #fafafa;
+}
+.why-content h4{
+    font-size: 2.5vw;
 }
 .why-content p{
     font-size: 1.6vw;
