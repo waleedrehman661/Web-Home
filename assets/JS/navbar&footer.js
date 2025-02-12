@@ -12,7 +12,7 @@ var navbar =document.querySelector("header").innerHTML +=
                     <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About</a>
+                    <a class="nav-link text-white" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="#">Services</a>
